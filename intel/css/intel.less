@@ -1,0 +1,60 @@
+@import "bootstrap.less";
+@logo-height:42px;
+body{
+  margin-top: @navbar-height;
+}
+
+.content{
+  background: @blue-darker;
+  color:@text-color-light;
+  a{
+    color:@text-color-light;
+    &:hover{
+      color:@blue-lighter;
+    }
+  }
+}
+
+.content>.container>.row{
+    margin-bottom:20px;
+}
+.navbar .container  .navbar-brand{
+   display: inline-block;
+    width:63px;
+    height:@logo-height;
+    background: url("../img/hdr-spr.png") no-repeat 0px -511px ;
+    margin-top:5px;
+    margin-left:5px;
+}
+.navbar .container .navbar-collapse .navbar-left{
+    margin-top:10px;
+    margin-left:10px;
+}
+.navbar .container .navbar-collapse .navbar-right li{
+   float:left;
+}
+.navbar .container .navbar-collapse .navbar-right li input{
+   margin-top:5px;
+}
+.navbar .container .navbar-collapse .navbar-right li .dropdown-toggle .dropdown-menu{
+    padding:10px 10px;
+}
+.mask-container{
+    position: relative;
+    overflow: hidden;
+}
+.mask-container img{
+    width:100%;
+}
+.img-mask{
+    position: absolute;
+   left: 0;
+    right:0;
+    height:100%;
+    /*opacity: .5;*/
+    background-color: rgba(0,0,0,0.7);
+    color:#fff;
+    top:80%;
+    cursor: pointer;
+    transition: top .15s linear;
+}
